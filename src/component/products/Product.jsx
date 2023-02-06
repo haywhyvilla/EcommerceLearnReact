@@ -7,12 +7,14 @@ import {
   Typography,
   IconBotton,
 } from "@material-ui/core";
-import { AddShoppingCart } from "material-ui/icons";
+import { AddShoppingCart } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 
 import useStyles from "./styles";
 
 const Product = ({ product }) => {
+  const classes = useStyles();
+
   return (
     <card className={classes.root}>
       <CardMedia className={classes.media} image="" title={Product.name} />
